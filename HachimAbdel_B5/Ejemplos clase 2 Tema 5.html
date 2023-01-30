@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Mi sitio web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        p{
+            font-size: 18px;
+            
+        }
+        body{
+            margin: 0 auto;
+            width: 85%;
+            margin-top: 2px;
+            font-family: Comic Sans MS;
+            text-align: justify;
+
+        }
+        header{
+            width: 100%;
+            height: 150px;
+            padding: 30px;
+            text-align: center;
+            background-image: linear-gradient(to right, lightgreen, rgb(0, 119, 255));
+            margin: 0 auto;
+        }
+        nav{
+            width: 85%;
+            margin: 0 auto;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            padding: 0px;
+            margin-bottom: 0px;
+        }
+        nav ul a{
+            flex: 1 1 auto;
+            background-color: rgb(144, 238, 191);
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            height: 50px;
+            padding: 10px;
+            font-size: 15pt;
+            border-color: white solid 5px;
+            transition: height 0.5s;
+        }
+        nav ul a:hoover{
+            background-color: red;
+            color: white;
+            height: 75px;
+
+        }
+        nav ul a:first-child{
+            border-left-width: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        nav ul a:last-child{
+            border-right-width: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+        main{
+            border: 5px lightgreen solid;
+            padding: 2%;
+        }
+        main section{
+            display: none;
+        }
+        main section:target{
+            background-color: white;
+            border-color: lightgreen;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Mi sitio WEB</h1>
+    </header>
+    <nav>
+        <ul>
+            <a href="#"><li><i class="bi bi-apple"></i></li></a>
+            <a href="#"><li><i class="bi bi-instagram"></i></li> </a>
+            <a href="#"><li><i class="bi bi-twitter"></i></li> </a>
+            <a href="#"><li><i class="bi bi-facebook"></i></li> </a>
+        </ul>
+        <p>Apple, Inc. es una empresa estadounidense que diseña y produce equipos electrónicos, software y servicios en línea. Tiene su sede principal en el Apple Park, en Cupertino (California, Estados Unidos) y la sede europea en la ciudad de Cork (Irlanda).
+            Sus productos hardware incluyen el teléfono inteligente iPhone, la tableta iPad, la computadora personal Mac, el reproductor de medios portátil iPod, el reloj inteligente Apple Watch y el reproductor de medios digitales Apple TV.
+            Entre el software de Apple se encuentran los sistemas operativos iOS, iPadOS, macOS, watchOS y tvOS, el explorador de contenido multimedia iTunes, 
+            la suite iWork (software de productividad), Final Cut Pro X (una suite de edición de vídeo profesional), 
+            Logic Pro (software para edición de audio en pistas de audio), 
+            Xsan (software para el intercambio de datos entre servidores) y el navegador web Safari.</p>
+    </nav>
+    <div class="boton"></div>
+</body>
+</html>

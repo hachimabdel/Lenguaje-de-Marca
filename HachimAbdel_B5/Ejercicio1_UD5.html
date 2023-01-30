@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1_UD5</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        p{
+            font-size: 18px;
+            
+        }
+        body{
+            margin: 0 auto;
+            width: 85%;
+            margin-top: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+
+        }
+        header{
+            width: 100%;
+            height: 150px;
+            padding: 30px;
+            text-align: center;
+            background-image: linear-gradient(to right, lightgreen, rgb(0, 119, 255));
+            margin: 0 auto;
+        }
+        nav{
+            width: 85%;
+            margin: 0 auto;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            padding: 10px;
+            margin-bottom: 0px;
+        }
+        nav ul a{
+            flex: 1 1 auto;
+            background-color:rgb(235, 230, 230);
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            text-align: center;
+            height: 50px;
+            padding: 14px;
+            font-size: 13pt;
+            border-color: rgb(29, 28, 28) 50px;
+            transition: height 0.5s;
+        }
+        nav ul a:hoover{
+            background-color: rgb(26, 24, 24);
+            color: white;
+            height: 75px;
+
+        }
+        nav ul a:first-child{
+            border-left-width: 20px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        nav ul a:last-child{
+            border-right-width: 20px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+
+        }
+        main{
+            border: 5px lightgreen solid;
+            padding: 2%;
+        }
+        main section{
+            display: none;
+        }
+        main section:target{
+            background-color: white;
+            border-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Services</li> </a>
+            <a href="#"><li>Portfolio</li> </a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Blog</li></a>
+            <a href="#"><li>Contact</li></a>
+        </ul>
+    </nav>
+    
+</body>
+</html>

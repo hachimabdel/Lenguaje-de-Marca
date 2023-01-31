@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio07</title>
+    <style type="text/css">
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+nav{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+nav ul{
+    list-style-type: none;
+    margin-bottom: 0px;
+    
+}
+nav > ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+nav > ul li{
+    background-color: rgb(10, 143, 173);
+    color: rgb(250, 250, 250);
+    flex: 1 1 auto;
+    height: 50px;
+    font-size: 20px;
+    padding-top: 8px;
+    align-items: center;
+}
+
+nav > ul > li li {
+    height: 0px;
+    overflow: hidden;
+    border-width: 0px;
+    transition: 1s;
+}
+
+nav>ul li:hover li{ 
+    height: 60px;
+    padding: 30px;
+
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+            <ul>
+                <li>Apple
+                    <ul>
+                        <li>iPhone</li>
+                        <li>Macbook</li>
+                        <li>Airpods</li>
+                        <li>Watch</li>
+                        <li>Accesorios</li>
+                    </ul>
+                </li> 
+                <li>iPhone
+                    <ul>
+                        <li>iPhone X</li>
+                        <li>iPhone 11</li>
+                        <li>iPhone 12</li>
+                        <li>iPhone 13</li>
+                        <li>iPhone 14</li>
+                    </ul>
+                </li> 
+                <li>Mac
+                    <ul>
+                        <li>Macbook Air</li>
+                        <li>Macbook Pro 14"</li>
+                        <li>Macbook Pro 16"</li>
+                        <li>iMac</li>
+                        <li>Mac Studio</li>
+                    </ul>
+                </li> 
+                <li>Airpods
+                    <ul>
+                        <li>Airpods 1ªgen</li>
+                        <li>Airpods 2ªGen</li>
+                        <li>Airpods 3ªGen</li>
+                        <li>Airpods Pro 2ªGen</li>
+                        <li>Airpods Max</li>
+                    </ul>
+                </li> 
+            </ul>
+    </nav>
+</body>
+</html>

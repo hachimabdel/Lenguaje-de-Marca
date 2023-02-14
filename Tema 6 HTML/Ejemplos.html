@@ -11,12 +11,14 @@
             border: 2px solid black;
             border-collapse: collapse ;
             margin: 0 auto;
+            caption-side: top;
         }
         tr{
             border: 2px solid black;/*No se puede*/
         }
-        td{
+        td, th{
             width: 20%;
+            height: 50px;
             border: 2px solid black;
             text-align: center;
             vertical-align: top;
@@ -25,14 +27,14 @@
     </style>
 </head>
 <body>
-    <h1>Notas en LMSGI</h1>
+    <h1> - Notas en LMSGI 1</h1>
     <table>
         <tr>
         <td>Alumno</td>
-        <td>Ex T5</td>
-        <td>Bol T5</td>
-        <td>Proy T4</td>
-        <td>Bol T4</td>
+        <td>Examen T5</td>
+        <td>Boletín T5</td>
+        <td>Proyecto T4</td>
+        <td>Boletín T4</td>
         </tr>
 
         <tr>
@@ -62,6 +64,47 @@
 
 
     </table>
+
+    <h1>- Notas en LMSGI 2</h1>
+        <table>
+            <caption>Notas 2ª Evaluación</caption>
+            <tbody>
+                <tfoot>
+                    <tr><!-- <th> es para poner en negrita "encabezado" -->
+                        <th>Alumno</th>
+                        <th>Ex T5</th>
+                        <th>Bol T5</th>
+                        <th>Proy T4</th>
+                        <th>Bol T4</th>
+                    </tr>
+
+                    <tr>
+                        <td>Manolito Gafotas</td> 
+                        <td>8.5</td> 
+                        <td>6.4</td>
+                        <td>9.3</td>
+                        <td>2.3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Filemón Pi</td>
+                        <td>9.2</td>
+                        <td>2.2</td> 
+                        <td>3.1</td>
+                        <td>4.2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mortadelo</td>
+                        <td>3.5</td>
+                        <td>8.4</td>
+                        <td>7.5</td>
+                        <td>3.5</td>
+
+                    </tr>
+                </tfoot>
+            </tbody>
+        </table>
     
 </body>
 </html>

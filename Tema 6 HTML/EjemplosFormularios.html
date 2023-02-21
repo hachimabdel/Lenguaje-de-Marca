@@ -6,28 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios Formularios</title>
     <style type="text/css">
-        form{
-            display: flex;
-            justify-content: ;
+
+        input[type=text]:focus{
+            background-color: green;
+            color: white;
+            border: green 2px solid;
+            outline: none;
         }
+        fieldset{
+            background-color: rgb(182, 64, 250);
+            border: 5px solid green;
+
+        }
+        legend{
+            color: black;
+            position: relative;
+
+        }
+        
+
     </style>
 </head>
 <body>
     <h1> Formulario de registro</h1>
+    <hr>
         <form name="registro" action="" method="" autocomplete
         enctype="multipart/form-data"> <!-- enctype solo si vamos a tener adjuntos-->
-            <label for="nombre">Nombre: </label>
-            <input type="text" name="nombre" id="nombre" placeholder="Su nombre aqui" required autofocus autocomplete> <br>
 
-            <label for="apellido">Apellido1: </label>
-            <input type="text" name="apellido" id="apellido" value = "Hachim"><br>
+            <fieldset>
+                <label for="nombre">Nombre: </label><br>
+                <input type="text" name="nombre" id="nombre" placeholder="Su nombre aqui" required autofocus autocomplete> <br>
 
-            <label for="apellido2">Apellido2: </label>
-            <input type="text" name="apellido" id="apellido2" required> <br>
+                <label for="apellido">Apellido1: </label><br>
+                <input type="text" name="apellido" id="apellido" value = "miguel"><br>
+
+                <label for="apellido2">Apellido2: </label><br>
+                <input type="text" name="apellido" id="apellido2" required> <br>
+
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad" min="0" max="99" step="1" value="15">
+
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <label for="genero">Género</label><br>
+                <input type="radio" name="genero" value="M" checked>Masculino<br>
+                <input type="radio" name="genero" value="M">Femenino<br>
+                <input type="radio" name="genero" value="M">Otro<br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+            
+                <legend>Aficiones</legend>
+                <!--<label for="checkbox">Aficiones</label><br> -->
+                <input type="checkbox" name="coches" value="coch"><label for="coches">Conducir coches</label><br>
+                <input type="checkbox" name="coches" value="coch"><label for="coches">Jurgo</label><br>
+                <input type="checkbox" name="coches" value="coch"><label for="coches">Coger la moto</label><br>
+                <input type="checkbox" name="coches" value="coch"><label for="coches">Ir al psicólogo</label><br>
+                <input type="checkbox" name="coches" value="coch"><label for="coches">Hacer HTML</label><br>
+                <input type="checkbox" name="coches" value="coch"><label for="coches">Bechamel</label><br>
+                <input type="checkbox" name="coches" value="coch"><label for="coches">Comer croquetas</label><br>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <label for="fnac">Fecha Nacimiento</label> <br>
+                <input type="date" name="fnac" id="fnac" min="1900-01-01" max="2020-12-31">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <label for="valoracion">Valoración</label>
+                <input type="range" name="valoracion" id="valoracion" min="1" max="10" step="1">
+
+            </fieldset>
 
             <input type="submit" name="enviar" value="Enviar"> 
-
-
+            <input type="submit" name="borrar" value="Borrar todo"> <br>
 
 
         

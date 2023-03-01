@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+    <style type="text/css">
+        
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    fieldset {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    input[type="number"],
+    input[type="date"],
+    select,
+    input[type="email"] {
+	    width: 100%;
+	    padding: 10px;
+	    border: 1px solid #ccc;
+	    border-radius: 5px;
+	    box-sizing: border-box;
+	    margin-bottom: 20px;
+    }
+
+    button[type="submit"] {
+	    background-color: #34bd7a;
+	    color: #fff;
+	    padding: 10px 20px;
+	    border: none;
+	    border-radius: 5px;
+	    cursor: pointer;
+	    font-weight: bold;
+    }
+    </style>
+
+</head>
+<body>
+
+    <h1>Formulario de reserva</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <label for="num_huespedes">Número de huéspedes:</label>
+                        <input type="number" id="huespedes" name="huespedes" min="1" value="1">
+
+        
+                <label for="fecha">Fecha de entrada:</label>
+                <input type="date" id="fecha" name="fecha">
+        
+                <label for="fecha">Fecha de salida:</label>
+                <input type="date" id="fecha" name="fecha">
+        
+                <label for="habitacion">Tipo de habitación:</label>
+                    <select id="habitacion" name="habitacion">
+                        <option value="">Seleccione una opción</option>
+                        <option value="individual">Individual</option>
+                        <option value="doble">Doble</option>
+                        <option value="triple">Triple</option>
+                        <option value="suite">Suite</option>
+                    </select>
+        
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo">
+        
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    
+</body>
+</html>

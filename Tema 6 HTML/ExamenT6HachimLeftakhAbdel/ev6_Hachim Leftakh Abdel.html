@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hdad. </title>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+	
+	<style type="text/css">
+
+		/*	COLORES: 
+				- Fondo general:  #e520bb;				
+				- Amarillos:  yellow;
+				- Blancos:  white;
+				- Morados: purple;
+
+			FUENTE:  Satisfy (está ya incluida a través de la etiqueta link);*/
+					
+		*{
+
+		box-sizing: border-box;
+
+		}
+
+		body{
+
+			background-color: #e520bb;
+
+		}
+
+		h1{
+
+			color:white;
+
+			text-align: center;
+
+			width: 80%;
+
+			margin: 1% auto;
+
+			font-style: italic;
+
+		}
+
+		form{
+
+			width: 80%;
+
+			border: 5px solid yellow;
+
+			margin: 0 auto;
+
+			background-color: #800a66;
+
+			color:rgb(0, 0, 0);
+
+			font-family: Arial;
+
+			padding:1%;
+
+			display: flex;	
+
+			flex-direction: row;
+
+			flex-wrap: wrap;
+
+			justify-content: space-between;
+
+		}
+
+		fieldset{
+
+			border: 5px solid yellow;
+			margin:1% 0;
+			background-color: yellow;
+
+		}
+
+
+
+		fieldset, legend{
+
+			transition: background-color 1s,color 1s;
+
+		}
+
+
+
+		.tipo{
+
+			flex: 100% 0 0;
+
+		}
+
+		.listaTiposDisfraces{
+
+			display: flex;
+
+			width: 100%;
+
+			flex-direction: row;
+
+			justify-content: space-between;
+
+		}
+
+		.columnaTipos{
+
+			flex: 25% 0 0;
+
+			margin-bottom: 1%;
+
+		}
+
+
+
+		.datos, .pago{
+
+			flex: 49% 0 0;
+
+			height: 175px;
+
+		}
+
+
+
+		input[type="checkbox"]:checked+label.tipo{
+
+			color:yellow;
+
+		}
+
+		
+
+		input:focus, textarea:focus{
+
+			color:#FF6F61;
+
+			border: 1px solid #FF6F61;
+
+			outline: none;
+
+		}
+
+
+		hr{
+
+			margin-top: 2%;
+
+			color: yellow;	
+
+		}
+
+		table{
+
+			width: 65%;
+
+			margin: 1% auto;
+
+			border-collapse: collapse;
+
+			caption-side: top;
+
+			background-color: purple;
+
+			border: 5px solid yellow;
+
+			color:white;
+
+			font-family: Arial;
+
+		}	
+		
+
+		caption{
+
+			color:white;
+
+			text-align: center;	
+
+			margin: 1% 0;
+
+			font-family: 'Lacquer';
+
+			font-style: italic;
+
+			font-size: 1.5em;
+
+		}
+
+		td,th{
+
+			border: 1px solid yellow;
+
+			padding: 1%;
+
+			width: 15%;
+
+			text-align: center;
+
+			vertical-align: middle;
+
+		}
+
+
+
+		td:first-child, th:first-child{
+
+			width: 55%;
+
+		}
+
+
+
+		tfoot td{
+
+			font-size: 0.7em;
+
+			text-align: left;
+
+		}
+		
+		
+		
+	</style>
+</head>
+<body>
+	<h1>Ilustre y Poco Antigua Hermandad del Santísimo Sacramento y Cofradía de Nazarenos de Nuestro Padre Señor del Soberano Poder del Wifi y María Santísima de la Cobertura Imposible </h1>
+	
+	<form name="alquiler" enctype="text/plain" method="POST" action="">
+	
+		<fieldset class="tipo">
+		
+			<legend>Elija su papeleta</legend>
+			<label for="tipoPaso">¿En qué paso desea salir?</label>
+
+			<select id="tipoPaso" name="tipoPaso" required>
+
+				<option value="1">Cristo</option>
+				<option value="2">Virgen</option>
+			
+			</select><br><br>
+			
+
+			<label for = "cirio" >  ¿De qué tamaño desea el cirio?</label>
+			<input type="radio" id="cirio" name="cirio" value="h" required>Pequeño
+			<input type="radio" id="cirio" name="cirio" value="h" required>Normal
+			<input type="radio" id="cirio" name="cirio" value="h" required>Cruz <br><br>
+
+			<label for="insignia">¿Desea solicitar portar alguna insignia?</label>
+			
+			<div class="listaTiposDisfraces">
+
+				<div class="columnaTipos">
+					<input type="checkbox" id="tipo1" name="tipo1" value="1">Cruz de Guía</label><br>
+					<input type="checkbox" id="tipo2" name="tipo2" value="2">Senatus</label><br>
+					<input type="checkbox" id="tipo3" name="tipo3" value="3">Bandera Morada</label><br>
+					<input type="checkbox" id="tipo4" name="tipo4" value="4">Reliquia Lignum Crucis</label><br>
+				</div>
+				<div class="columnaTipos">
+
+					<input type="checkbox" id="tipo5" name="tipo5" value="5">Banderín Juventud</label><br>
+					<input type="checkbox" id="tipo6" name="tipo6" value="6">Estandarte Sacramental</label><br>
+					<input type="checkbox" id="tipo7" name="tipo7" value="7">Cruz Alzada</label><br>
+					<input type="checkbox" id="tipo8" name="tipo8" value="8">Simpecado</label><br>
+				</div>
+				<div class="columnaTipos">
+
+					<input type="checkbox" id="tipo9" name="tipo9" value="9">Bandera Blanca</label><br>
+					<input type="checkbox" id="tipo10" name="tipo10" value="10">Guión de Caridad</label><br>
+					<input type="checkbox" id="tipo11" name="tipo11" value="11">Libro de Reglas</label><br>
+					<input type="checkbox" id="tipo12" name="tipo12" value="12">Estandarte</label><br>
+				</div>
+			</div>
+
+			<label for="info">¿Desea indicarnos alguna petición especial?</label><br>
+			<textarea id="info" name="info" rows="5" cols="35"></textarea>
+		</fieldset>
+
+		<fieldset class="datos">
+			<legend>Indique sus datos personales</legend>
+				<label for="nombre">Nombre y apellidos</label>
+				<input type="text" name="nombre" id="nombre" maxlength="50" size="25" required placeholder="Nombre y apellidos"><br><br>
+
+				<label for="direccion">Dirección de envío</label>
+				<input type="text" name="direccion" id="direccion" maxlength="50" size="50" required placeholder="c/Cofrades del Soberano, 4"><br><br>
+
+				<label for="codpostal">Código Postal</label>
+				<input type="text" name="codpostal" id="codpostal" maxlength="5" size="5" pattern="[0-9]{5}" required placeholder="41024"><br><br>
+
+				<label for="tlf">Teléfono de contacto</label>
+				<input type="text" name="tlf" id="tlf" maxlength="9" size="9" pattern="[0-9]{9}" required placeholder="954123123"><br>
+
+		</fieldset>
+		<fieldset class="pago">
+			<legend>Indique sus datos de pago</legend>
+				<label for="tarjeta">Número de tarjeta</label>
+				<input type="text" name="tarjeta" id="tarjeta" maxlength="16" size="16" pattern="[0-9]{16}"required placeholder="16 cifras sin espacios"><br><br>
+
+				<label for="fcad">Fecha de Caducidad</label>
+				<input type="month" name="fcad" id="fcad"><br><br>
+
+				<label for="ccv">Código de Seguridad (CCV)</label>
+				<input type="password" name="ccv" id="ccv" maxlength="3" size="3" pattern="[0-9]{3}" required placeholder="123"><br><br>
+		</fieldset>
+	
+		<p>
+			<input type="submit" value="Solicitar Papeleta">
+
+			<input type="reset" value="Borrar datos">
+		</p>
+		
+	</form>
+
+
+	<hr />
+
+	<table>
+		<caption>Limosnas 2023</caption>
+		<thead>
+
+			<tr>
+				<th>Papeleta</th>
+				<th>Limosna</th>
+				<th colspan="2" >Observaciones</th>
+			</tr>
+
+		</thead>
+		
+		<tbody>
+
+			<tr>
+				<td>Cirio, cruz</td>
+				<td>16€</td>
+				<td colspan="2">Pequeño: 12€</td>
+			</tr>	
+
+			<tr>
+				<td>Insignias Cristo</td>
+				<td>20€</td>
+				<td colspan="2"> - </td>				
+			</tr>
+
+			<tr>
+				<td>Insignias Virgen</td>
+				<td>22€</td>
+				<td colspan="2"> - </td>				
+			</tr>
+
+			<tr>
+				<td rowspan="2">Entrega</td>
+				<td colspan="3">Recogida en casa hermandad: Gratis.</td>
+				<td></td>			
+			</tr>
+
+			<tr>
+				<td colspan="3">Envío electrónico: 1€</td>			
+				<td></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td colspan="">Envío postal: 2€</td>			
+
+			</tr>
+		</tbody>	
+		<tfoot>
+			<tr>
+				<td colspan="5">NOTA: Todas las insignias se asignarán por orden de antigüedad</td>
+			</tr>
+		</tfoot>
+		
+	</table>
+</body>
+</html>
